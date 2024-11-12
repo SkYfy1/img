@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card {
+    display: flex;
+    width: 600px;
+    height: 350px;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+}
+
+
+.card-cover {
+    flex: 2;
+    background-image: url("../../assets/cover.jpg");
+    background-size: cover;
+    background-position: 45% 65%;
+    transform: scaleX(1)
+}
+
+
+.card-info {
+    position: relative;
+    flex: 1;
+}
+
+.info {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    height: 100%;
+    margin: 70px 0 20px 20px;
+}
+
+h1 {
+    line-height: 1;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+    width: 1/3;
+}
+
+.country {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.about {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    align-items: center;
+    font-size: 1.05rem;
+}
+
+.change-about {
+    display: flex;
+    gap: 5px;
+    position: relative;
+    align-items: center;
+    font-size: 1rem;
+    padding: 15px;
+}
+
+.about>*:not(.popup):not(:last-child)::after {
+    content: '';
+    height: 4px;
+    width: 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-bottom: 4px;
+    display: inline-block;
+}
+
+.about>p {
+    display: inline;
+}
+
+.update-btn {
+    padding: 10px;
+    margin-top: 0px;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background: rgb(224, 230, 221);
+    transition: all 0.5s ease-in;
+}
+
+
+.update-btn:hover {
+    background: rgb(83, 83, 83);
+    color: white;
+}
+
+.avatar {
+    /* background-image: url("../../assets/avatar.jpg"); */
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 35px;
+}
+
+
+.f {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+    align-items: center;
+    height: 1px;
+}
+
+.popup {
+    width: 100px;
+    height: 60px;
+    background: #000;
+    border-radius: 15px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    bottom: 45px;
+    left: 10px;
+}
+
+.popup::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #000;
+    position: absolute;
+    left: 20px;
+    bottom: -8px;
+}
+
+.x {
+    color: black;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border: none;
+    font-size: 1.2rem
+}
+
+.x:hover {
+    cursor: pointer;
+}
+
+
+.change {
+    width: 25px;
+    height: 25px;
+    transition: all 1s;
+}
+
+.change:hover {
+    transform: scale(1.2);
+}
+
+/* .card {
+    display: flex;
+    width: 600px;
+    height: 350px;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+}
+
+
+.card-cover {
+    flex: 2;
+    background-image: url("../../assets/cover.jpg");
+    background-size: cover;
+    background-position: 45% 65%;
+    transform: scaleX(1)
+}
+
+.avatar {
+    background-image: url("../../assets/avatar.jpg");
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: -40%;
+    left: 6%;
+    border: 5px solid white;
+}
+
+
+.card-info {
+    position: relative;
+    flex: 3;
+}
+
+.info {
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+    margin: 70px 0 20px 20px;
+}
+
+h1 {
+    line-height: 1;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.country {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.about {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.about>*::after {
+    content: '';
+    height: 4px;
+    width: 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-bottom: 4px;
+    display: inline-block;
+}
+
+.about>p {
+    display: inline;
+}
+
+.update {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 5px;
+} */
